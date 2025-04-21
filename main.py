@@ -1,15 +1,15 @@
 import streamlit as st
-#import cv2      
-# import numpy as np 
-# from torchvision.transforms import Compose, Resize, ToTensor, Normalize   
-# import matplotlib.pyplot as plt  
-# from PIL import Image
-# from ultralytics import YOLO
+import cv2      
+import numpy as np 
+from torchvision.transforms import Compose, Resize, ToTensor, Normalize   
+import matplotlib.pyplot as plt  
+from PIL import Image
+from ultralytics import YOLO
 
 # print("Available GPU:", torch.cuda.is_available())
 # print("CUDA Version:", torch.version.cuda)
 # print("GPU Version:", torch.cuda.get_device_name(0))
-# device = "cuda" if torch.cuda.is_available() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 # print("Using device:", device)
 
 st.title("Multi-Model Object Detection")
