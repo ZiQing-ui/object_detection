@@ -18,7 +18,7 @@ uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
 # #load yolo for object detection
 model_yolo1 = YOLO('best.pt')
-model_yolo2 = YOLO('yolov8m.pt')
+#model_yolo2 = YOLO('yolov8m.pt')
 model_yolo2.to(device)
 
 # #load MiDaS model
