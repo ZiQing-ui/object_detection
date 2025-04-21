@@ -17,19 +17,19 @@ st.title("Multi-Model Object Detection")
 uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
 # #load yolo for object detection
-# model_yolo1 = YOLO("C:/Users/PC 40/object_detection_yolov8/objects in the classroom/runs/detect/train3/weights/best.pt")
-# model_yolo2 = YOLO('yolov8m.pt')
-# model_yolo2.to(device)
+model_yolo1 = YOLO('best.pt')
+model_yolo2 = YOLO('yolov8m.pt')
+model_yolo2.to(device)
 
 # #load MiDaS model
-# midas = torch.hub.load("intel-isl/MiDaS", "MiDaS_small")
-# #device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
-# midas.to(device)
-# midas.eval()
+midas = torch.hub.load("intel-isl/MiDaS", "MiDaS_small")
+#device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+midas.to(device)
+midas.eval()
 
-# #preprocessing image-resize and normalize the image
-# transforms = torch.hub.load('intel-isl/MiDaS','transforms')
-# transform = transforms.small_transform
+#preprocessing image-resize and normalize the image
+transforms = torch.hub.load('intel-isl/MiDaS','transforms')
+transform = transforms.small_transform
 
 # #position of object whether it is at left, right or center of the image
 # def get_position(center, image_width):
