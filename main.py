@@ -1,10 +1,10 @@
 import streamlit as st
 #import cv2      
-import numpy as np 
-from torchvision.transforms import Compose, Resize, ToTensor, Normalize   
-import matplotlib.pyplot as plt  
-from PIL import Image
-from ultralytics import YOLO
+# import numpy as np 
+# from torchvision.transforms import Compose, Resize, ToTensor, Normalize   
+# import matplotlib.pyplot as plt  
+# from PIL import Image
+# from ultralytics import YOLO
 
 # print("Available GPU:", torch.cuda.is_available())
 # print("CUDA Version:", torch.version.cuda)
