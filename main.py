@@ -1,5 +1,6 @@
 import streamlit as st
-import cv2      
+import cv2
+import torch 
 import numpy as np 
 from torchvision.transforms import Compose, Resize, ToTensor, Normalize   
 import matplotlib.pyplot as plt  
